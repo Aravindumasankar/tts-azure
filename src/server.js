@@ -37,7 +37,7 @@ const create = async () => {
         
         // stream from file or memory
         if (file && file === true) {
-            fileName = `./temp/stream-from-file-${timeStamp()}.mp3`;
+            fileName = `./temp/stream-from-file-${Math.random() * 5}.mp3`;
         }
         
         const audioStream = await textToSpeech(key, region, phrase, fileName);
